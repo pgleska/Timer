@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/edit_work"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_rest"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/plus_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_work"
+        android:layout_toLeftOf="@+id/edit_work"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/minus_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_work"
+        android:layout_toRightOf="@+id/edit_work"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/text_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edit_work"
+        android:layout_centerHorizontal="true"
+        android:text="WORK"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edit_prep"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/text_work"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/plus_prep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_prep"
+        android:layout_toLeftOf="@id/edit_prep"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/minus_prep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_prep"
+        android:layout_toRightOf="@id/edit_prep"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/text_prep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edit_prep"
+        android:layout_centerHorizontal="true"
+        android:text="PREPARE"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edit_rest"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_rest"
+        android:ems="10"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/plus_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_rest"
+        android:layout_toLeftOf="@id/edit_rest"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/minus_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_rest"
+        android:layout_toRightOf="@id/edit_rest"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/text_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="REST"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edit_round"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_round"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/plus_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_round"
+        android:layout_toLeftOf="@id/edit_round"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/minus_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edit_round"
+        android:layout_toRightOf="@id/edit_round"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/text_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_rest"
+        android:layout_centerHorizontal="true"
+        android:text="ROUNDS"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_prep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:justificationMode="inter_word"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/main_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="START" />
+</RelativeLayout>
