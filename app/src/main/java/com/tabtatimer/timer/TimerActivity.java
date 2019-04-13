@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 
 
-public class TimingActivity extends AppCompatActivity {
+public class TimerActivity extends AppCompatActivity {
     private TextView mFullTime, mCurrentTime, mPart, mRounds;
     private long longPrepInMilli, longWorkInMilli, longRestInMilli, constWork, constRest;
     public long longTimeInMilli;

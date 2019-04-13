@@ -280,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
         workTxt = Integer.toString(work);
         restTxt = Integer.toString(rest);
         roundTxt = Integer.toString(round);
-        Intent intent = new Intent(this, TimingActivity.class);
+        Intent intent = new Intent(this, TimerActivity.class);
         intent.putExtra(TIME, timeTxt);
         intent.putExtra(PREP, prepTxt);
         intent.putExtra(WORK, workTxt);
